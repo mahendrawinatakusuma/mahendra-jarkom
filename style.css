@@ -96,3 +96,46 @@ footer {
     color: #fff;
     margin-top: 40px;
 }
+
+/* --- Media Query untuk HP (Layar di bawah 768px) --- */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Membuat container lebih lebar di layar kecil */
+        padding: 15px; /* Mengurangi padding agar tidak sempit */
+        margin: 10px auto;
+    }
+
+    .profile-card {
+        flex-direction: column; /* Mengubah foto dan teks jadi berurutan ke bawah */
+        gap: 15px;
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 150px; /* Mengecilkan foto di layar HP */
+    }
+
+    .details p {
+        font-size: 1.1em; /* Menyesuaikan ukuran font agar enak dibaca */
+    }
+
+    .device-image {
+        width: 100%; /* Gambar perangkat menyesuaikan lebar layar */
+        max-width: 300px;
+    }
+
+    .download-links {
+        flex-direction: column; /* Tombol download jadi menumpuk ke bawah */
+        gap: 10px;
+    }
+
+    .btn-download {
+        width: 100%; /* Tombol jadi lebar penuh agar mudah diklik jempol */
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Mengecilkan judul header agar tidak terpotong */
+    }
+}
